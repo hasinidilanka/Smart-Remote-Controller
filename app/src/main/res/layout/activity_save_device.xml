@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="#2B050A5C"
+    tools:context=".SaveDevice">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        >
+    <EditText android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="Name of the device"
+        android:textColorHint="#FFFAF6F6"
+        android:textColorLink="#FF1F7CD3"
+        android:textColor="#FFFAF6F6"
+        android:visibility="visible"/>
+
+     <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectType"
+            android:textColorHint="#FFFAF6F6"
+            android:textColorLink="#FF1F7CD3"
+            android:textColor="#FFFAF6F6"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_saveDevice"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:text="Save Device"
+        android:background="@drawable/button"
+        android:textColor="#FF070707"
+        />
+
+    </LinearLayout>
+
+</ScrollView>
